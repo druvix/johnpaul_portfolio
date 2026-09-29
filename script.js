@@ -180,9 +180,15 @@ document.addEventListener("DOMContentLoaded", () => {
       `  <span class="term-highlight">skills</span>      - Core competencies & tools`,
       `  <span class="term-highlight">experience</span>  - Career timeline & past companies`,
       `  <span class="term-highlight">projects</span>    - Featured project deployments`,
+      `  <span class="term-highlight">resume</span>      - Download official 2026 PDF resume`,
       `  <span class="term-highlight">contact</span>     - Direct phone & email info`,
       `  <span class="term-highlight">status</span>      - Current availability status`,
       `  <span class="term-highlight">clear</span>       - Clear terminal window`
+    ],
+    resume: () => [
+      `<span class="text-success">✔ Official Resume (PDF):</span>`,
+      `Document: John Paul P. Dellera Resume updated 2026`,
+      `Direct Download: <a href="John Paul P. Dellera Resume updated 2026_2e088a54-b507-4d27-947c-ad627b668b78.docx.pdf" download="John_Paul_Dellera_Resume.pdf" target="_blank" class="term-highlight">📥 Click here to Download PDF</a>`
     ],
     whoami: () => [
       `<span class="term-highlight">John Paul Perocillo Dellera</span>`,
@@ -424,30 +430,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ------------------------------------------------------------------------
-  // 10. CONTACT FORM HANDLER
-  // ------------------------------------------------------------------------
-  const contactForm = document.getElementById("contact-form");
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const name = document.getElementById("form-name").value.trim();
-      const email = document.getElementById("form-email").value.trim();
-      const subject = document.getElementById("form-subject").value.trim();
-      const message = document.getElementById("form-message").value.trim();
-
-      const emailSubject = encodeURIComponent(`[Portfolio Inquiry] ${subject} - ${name}`);
-      const emailBody = encodeURIComponent(
-        `Hi John Paul,\n\n${message}\n\n---\nSender: ${name}\nEmail: ${email}`
-      );
-
-      const mailtoUrl = `mailto:cezto30@gmail.com?subject=${emailSubject}&body=${emailBody}`;
-      
-      showToast("Opening your email client...");
-      window.location.href = mailtoUrl;
-    });
-  }
 
   // ------------------------------------------------------------------------
   // 11. FOOTER CURRENT YEAR

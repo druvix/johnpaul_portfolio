@@ -49,10 +49,10 @@
         <a href="#contact" class="nav-link">Contact</a>
         <div class="mobile-nav-cta">
           <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
-          <button class="btn btn-sm btn-outline print-cv-btn" onclick="window.print()">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>
-            Print Resume
-          </button>
+          <a href="John Paul P. Dellera Resume updated 2026_2e088a54-b507-4d27-947c-ad627b668b78.docx.pdf" download="John_Paul_Dellera_Resume.pdf" class="btn btn-sm btn-outline" target="_blank" title="Download Official Resume PDF">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume (PDF)
+          </a>
         </div>
       </div>
 
@@ -74,10 +74,10 @@
           </svg>
         </button>
 
-        <button class="btn btn-sm btn-outline desktop-only print-cv-btn" onclick="window.print()" title="Print or save as PDF">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>
-          Resume
-        </button>
+        <a href="John Paul P. Dellera Resume updated 2026_2e088a54-b507-4d27-947c-ad627b668b78.docx.pdf" download="John_Paul_Dellera_Resume.pdf" class="btn btn-sm btn-outline desktop-only" target="_blank" title="Download Official Resume PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume (PDF)
+        </a>
 
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
           <span class="bar"></span>
@@ -129,10 +129,10 @@
               <span>Contact Me</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
             </a>
-            <button class="btn btn-ghost print-cv-btn" onclick="window.print()" title="Print Clean Resume">
+            <a href="John Paul P. Dellera Resume updated 2026_2e088a54-b507-4d27-947c-ad627b668b78.docx.pdf" download="John_Paul_Dellera_Resume.pdf" class="btn btn-ghost" target="_blank" title="Download Official Resume PDF">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span>Save Resume</span>
-            </button>
+              <span>Download Resume (PDF)</span>
+            </a>
           </div>
 
           <!-- Quick Metrics Bar -->
@@ -184,6 +184,7 @@
                 <button class="chip" data-cmd="skills">skills</button>
                 <button class="chip" data-cmd="experience">experience</button>
                 <button class="chip" data-cmd="projects">projects</button>
+                <button class="chip" data-cmd="resume">resume</button>
                 <button class="chip" data-cmd="contact">contact</button>
                 <button class="chip" data-cmd="clear">clear</button>
               </div>
@@ -902,51 +903,37 @@
                 </div>
               </div>
 
-              <!-- Save vCard & Resume Actions -->
-              <div class="contact-btn-row">
-                <button id="download-vcard-btn" class="btn btn-outline btn-sm">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
-                  <span>Save Contact (vCard)</span>
-                </button>
-                <button class="btn btn-outline btn-sm print-cv-btn" onclick="window.print()">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6z"/></svg>
-                  <span>Print Resume</span>
-                </button>
-              </div>
             </div>
           </div>
 
-          <!-- Quick Message Form (Client-Side mailto fallback) -->
-          <div class="contact-form-block">
-            <form id="contact-form" class="quick-form">
-              <h3>Send a Message</h3>
-              <p class="form-subtitle">Need IT support or hiring for a project? Send a direct message.</p>
-
-              <div class="form-group">
-                <label for="form-name">Your Name</label>
-                <input type="text" id="form-name" required placeholder="e.g. John Doe">
+          <!-- Documentation & Quick Actions Panel -->
+          <div class="contact-actions-block">
+            <div class="resume-download-card">
+              <div class="resume-card-header">
+                <div class="resume-card-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </div>
+                <span class="badge-pdf">PDF Document</span>
               </div>
-
-              <div class="form-group">
-                <label for="form-email">Your Email</label>
-                <input type="email" id="form-email" required placeholder="john@example.com">
+              <div class="resume-card-details">
+                <h3>Official Curriculum Vitae</h3>
+                <p>Updated 2026 resume detailing John Paul Dellera's IT technical support experience, telecom TSSR documentation, Huawei certifications, and site deployments.</p>
+                <div class="resume-btn-group">
+                  <a href="John Paul P. Dellera Resume updated 2026_2e088a54-b507-4d27-947c-ad627b668b78.docx.pdf" download="John_Paul_Dellera_Resume.pdf" class="btn btn-primary w-full" target="_blank" title="Download Official Resume PDF">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Download Official Resume (PDF)</span>
+                  </a>
+                  <button id="download-vcard-btn" class="btn btn-secondary w-full" title="Save Contact to Phone">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                    <span>Save Contact (vCard)</span>
+                  </button>
+                  <a href="mailto:cezto30@gmail.com" class="btn btn-outline w-full" title="Send Email Directly">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    <span>Compose Direct Email</span>
+                  </a>
+                </div>
               </div>
-
-              <div class="form-group">
-                <label for="form-subject">Subject</label>
-                <input type="text" id="form-subject" required placeholder="IT Technical Support Opportunity / Project Inquiry">
-              </div>
-
-              <div class="form-group">
-                <label for="form-message">Message</label>
-                <textarea id="form-message" rows="4" required placeholder="Hi John Paul, I would like to discuss..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary w-full">
-                <span>Send via Email Client</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>

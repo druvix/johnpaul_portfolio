@@ -1515,58 +1515,81 @@ a.contact-value:hover {
   opacity: 1;
 }
 
-.contact-btn-row {
+/* Documentation & Resume Action Panel */
+.contact-actions-block {
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 10px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Contact Form */
-.contact-form-block {
+.resume-download-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
 }
 
-.quick-form h3 {
-  font-size: 1.3rem;
-  margin-bottom: 6px;
-}
-
-.form-subtitle {
-  color: var(--text-muted);
-  font-size: 0.88rem;
-  margin-bottom: 22px;
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-main);
-  margin-bottom: 6px;
-}
-
-.form-group input, .form-group textarea {
-  width: 100%;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 10px 14px;
-  color: var(--text-main);
-  outline: none;
-  transition: border-color var(--transition-fast);
-}
-.form-group input:focus, .form-group textarea:focus {
+.resume-download-card:hover {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px var(--accent-glow);
+  box-shadow: var(--shadow-glow);
 }
+
+.resume-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.resume-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--accent-glow);
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badge-pdf {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.12);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  letter-spacing: 0.06em;
+}
+
+.resume-card-details h3 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+.resume-card-details p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+.resume-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
 
 /* --------------------------------------------------------------------------
    15. FOOTER
